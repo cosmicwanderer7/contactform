@@ -117,7 +117,7 @@ const Home: NextPage = () => {
               <form className="flex flex-col space-y-4" onSubmit={handelSubmit}>
                 <div>
                   <label htmlFor="name" className="text-sm">
-                    Name
+                    Name <text className="text-red-700">*</text>
                   </label>
 
                   <input 
@@ -126,12 +126,13 @@ const Home: NextPage = () => {
                     name="name"
                     id="name"
                     className="ring-1 ring-gray-300 w-full rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
-                    placeholder="Your Name"
+                    placeholder="Your Full Name"
+                    required
                   />
                 </div>
                 <div>
                   <label htmlFor="phone" className="text-sm">
-                    Phone
+                    Phone <text className="text-red-700">*</text>
                   </label>
 
                   <input
@@ -141,12 +142,13 @@ const Home: NextPage = () => {
                     id="phone"
                     className="ring-1 ring-gray-300 w-full rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="Phone Number"
+                    required
                   />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="text-sm">
-                    Email Address
+                    Email Address <text className="text-red-700">*</text>
                   </label>
 
                   <input
@@ -156,6 +158,7 @@ const Home: NextPage = () => {
                     id="email"
                     className="ring-1 ring-gray-300 w-full rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="Email Address"
+                    required
                   />
                 </div>
                 <div>
