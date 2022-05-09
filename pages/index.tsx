@@ -20,7 +20,7 @@ const Home: NextPage = () => {
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
 
-  const handelSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault();
 
       let form = {
@@ -114,7 +114,7 @@ const Home: NextPage = () => {
           </div>
           <div className="relative">
             <div className="relative z-10 backdrop-blur-sm bg-white/80 rounded-lg shadow-lg p-7 md:w-[82] text-gray-600 ">
-              <form className="flex flex-col space-y-4" onSubmit={handelSubmit}>
+              <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="text-sm">
                     Name <text className="text-red-700">*</text>
