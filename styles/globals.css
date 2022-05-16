@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-image: url('https://i.imgur.com/w2LxDQU.png');
+    background-repeat: no-repeat;
+  }

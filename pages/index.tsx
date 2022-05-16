@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+
 import Head from "next/head";
 import {
   PhoneIcon,
@@ -56,20 +57,20 @@ const Home: NextPage = () => {
      
   }
   return (
-    <div className="antialiased p-2 bg-gradient-to-r from-cyan-400 to-teal-600">
+    <div className="antialiased p-2 ">
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Contact Form</title>
       </Head>
       <div className="flex w-full min-h-screen justify-center items-center ">
-        <div className="flex flex-col md:flex-row md:space-x-6 md:space-y-0 space-y-6 backdrop-blur-xl bg-[#ffffff65] w-full max-w-4xl p-8 rounded-lg shadow-xl shadow-[#27d4e0f9] overflow-hidden">
+        <div className="flex flex-col md:flex-row md:space-x-6 md:space-y-0 space-y-6 backdrop-blur-xs bg-[#1a1a1adc] border w-full max-w-4xl p-8 rounded-lg shadow-xl shadow-[#1d1e1fb4] overflow-hidden">
           <div className="flex flex-col space-y-8 justify-between">
             <div>
               <h1 className="font-bold text-3xl text-white tracking-wide">
                 Contact Form
               </h1>
-              <p className="pt2 text-teal-100 text-m">
+              <p className="pt2 text-[#f7768ec5] text-m">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
                 ducimus Eos.
               </p>
@@ -116,7 +117,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="relative z-10 backdrop-blur-sm bg-white/80 rounded-lg shadow-lg p-7 md:w-[82] text-gray-600 ">
+            <div className="relative z-10 backdrop-blur-sm bg-white/40 rounded-lg shadow-lg p-7 md:w-[82] text-gray-600 ">
               <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="text-sm">
@@ -177,7 +178,7 @@ const Home: NextPage = () => {
                     placeholder="Your Feedback"
                   />
                 </div>
-                <button type="submit" className="inline-block self-end bg-cyan-700 text-white font-bold rounded-lg py-2 px-6">
+                <button type="submit" className="inline-block self-end bg-[#f7768ef5] text-white font-bold rounded-lg py-2 px-6">
                   Submit
                 </button>
               </form>
