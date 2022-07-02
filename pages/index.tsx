@@ -16,46 +16,42 @@ import {
 import { FormEvent, useState } from "react";
 
 const Home: NextPage = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
+    e.preventDefault();
 
-      const formData ={}
-      Array.from(e.currentTarget)
+    const formData = {};
+    Array.from(e.currentTarget);
 
-      let form = {
-          name,
-          email,
-          phone,
-          message
-      }
+    let form = {
+      name,
+      email,
+      phone,
+      message,
+    };
 
-      const rawResponse = await fetch('/api/submit', {
-        method:'post',
-        headers: {
-            'Accept': 'aplication/json',
-            'Content-Type': 'application/json'
+    const rawResponse = await fetch("/api/submit", {
+      method: "post",
+      headers: {
+        Accept: "aplication/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
 
-        },
-        body: JSON.stringify(form)
+    const content = await rawResponse.json();
 
-      });
+    alert("Thank you for your response click ok to clear the form.");
 
-      const content = await rawResponse.json();
-      
-      alert("Thank you for your response click ok to clear the form.")
-
-      setMessage('')
-      setPhone('')
-      setEmail('')
-      setName('')
-
-     
-  }
+    setMessage("");
+    setPhone("");
+    setEmail("");
+    setName("");
+  };
   return (
     <div className="antialiased p-2 ">
       <Head>
@@ -124,8 +120,9 @@ const Home: NextPage = () => {
                     Name <text className="text-red-700">*</text>
                   </label>
 
-                  <input 
-                    value={name} onChange={e => setName(e.target.value)}
+                  <input
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                     type="text"
                     name="name"
                     id="name"
@@ -140,7 +137,8 @@ const Home: NextPage = () => {
                   </label>
 
                   <input
-                    value={phone} onChange={e => setPhone(e.target.value)}
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                     type="tel"
                     name="phone"
                     id="phone"
@@ -156,7 +154,8 @@ const Home: NextPage = () => {
                   </label>
 
                   <input
-                    value={email} onChange={e => setEmail(e.target.value)}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     type="email"
                     name="email"
                     id="email"
@@ -167,16 +166,20 @@ const Home: NextPage = () => {
                 </div>
                 <div>
                   <label htmlFor="message" className="text-sm">
-                   country of origin 
+                    country of origin
                   </label>
 
-                  <select className="ring-1 ring-gray-300 w-full rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2">  
-<option value = "India"> India  
-</option>  
-<option value = "outside india"> outside India
-</option>  
-  
-</select> 
+                  <select
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    name="message"
+                    id="message"
+                    className="ring-1 ring-gray-300 w-full rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
+                    placeholder="Your Feedback"
+                  >
+                    <option value="message"> India</option>
+                    <option value="message"> outside India</option>
+                  </select>
                 </div>
                 <div>
                   <label htmlFor="message" className="text-sm">
@@ -184,14 +187,18 @@ const Home: NextPage = () => {
                   </label>
 
                   <textarea
-                    value={message} onChange={e => setMessage(e.target.value)}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     name="message"
                     id="message"
                     className="ring-1 ring-gray-300 w-full rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="Your Feedback"
                   />
                 </div>
-                <button type="submit" className="inline-block self-end bg-[#f7768ef5] text-white font-bold rounded-lg py-2 px-6">
+                <button
+                  type="submit"
+                  className="inline-block self-end bg-[#f7768ef5] text-white font-bold rounded-lg py-2 px-6"
+                >
                   Submit
                 </button>
               </form>
