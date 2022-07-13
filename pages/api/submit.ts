@@ -6,6 +6,7 @@ type SheetForm = {
     email: string
     phone: string
     message: string
+    country: string
 }
 
 export default async function handler(
@@ -42,7 +43,7 @@ export default async function handler(
             valueInputOption: 'USER_ENTERED',
             requestBody: {
                 values: [
-                    [body.name, body.email, body.phone, body.message]
+                    [body.name, body.email, body.phone, body.message, body.country]
                 ]
             }
         });
