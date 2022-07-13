@@ -177,8 +177,8 @@ const Home: NextPage = () => {
                     className="ring-1 ring-gray-300 w-full rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="Your Feedback"
                   >
-                       <option value={message}> India</option>
-                       <option value={message}> outside India</option>
+                       <option> India</option>
+                       <option> outside India</option>
                   </select>
                 </div>
                 <div>
