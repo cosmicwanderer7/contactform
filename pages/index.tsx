@@ -20,7 +20,7 @@ const Home: NextPage = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-  const [country, setcountry] = useState("");
+  const [country, setCountry] = useState("");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
     setPhone("");
     setEmail("");
     setName("");
-    setcountry("");
+    setCountry("");
   };
   return (
     <div className="antialiased p-2 ">
@@ -174,9 +174,9 @@ const Home: NextPage = () => {
 
                   <select
                     value={country}
-                    onChange={(e) => setcountry(e.target.value)}
-                    name="message"
-                    id="message"
+                    onChange={(e) => setCountry(e.target.value)}
+                    name="country"
+                    id="country"
                     className="ring-1 ring-gray-300 w-full rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="slelect"
                   >
