@@ -174,7 +174,7 @@ const Home: NextPage = () => {
 
                   <select
                     value={country}
-                    onChange={(e) => setMessage(e.target.value)}
+                    onChange={(e) => setcountry(e.target.value)}
                     name="message"
                     id="message"
                     className="ring-1 ring-gray-300 w-full rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
