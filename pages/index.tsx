@@ -176,8 +176,8 @@ const Home: NextPage = () => {
                   <select
                     value={country}
                     onChange={(e) => setCountry(e.target.value)}
-                    name="country"
-                    id="country"
+                    name="message"
+                    id="message"
                     className="ring-1 ring-gray-300 w-full rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="slelect"
                   >
@@ -252,7 +252,7 @@ const Home: NextPage = () => {
                     <option placeholder="CW">Curaçao</option>
                     <option placeholder="CY">Cyprus</option>
                     <option placeholder="CZ">Czechia</option>
-                    <option placeholder="CI">Côte d'Ivoire</option>
+                    <option placeholder="CI">Côte d&aposIvoire</option>
                     <option placeholder="DK">Denmark</option>
                     <option placeholder="DJ">Djibouti</option>
                     <option placeholder="DM">Dominica</option>
@@ -318,13 +318,13 @@ const Home: NextPage = () => {
                     <option placeholder="KE">Kenya</option>
                     <option placeholder="KI">Kiribati</option>
                     <option placeholder="KP">
-                      Korea (the Democratic People's Republic of)
+                      Korea (the Democratic People&aposs Republic of)
                     </option>
                     <option placeholder="KR">Korea (the Republic of)</option>
                     <option placeholder="KW">Kuwait</option>
                     <option placeholder="KG">Kyrgyzstan</option>
                     <option placeholder="LA">
-                      Lao People's Democratic Republic (the)
+                      Lao People&aposs Democratic Republic (the)
                     </option>
                     <option placeholder="LV">Latvia</option>
                     <option placeholder="LB">Lebanon</option>
