@@ -170,7 +170,7 @@ const Home: NextPage = () => {
                 </div>
                 <div>
                   <label htmlFor="message" className="text-sm">
-                    country of origin
+                    Country Of Origin
                   </label>
 
                   <select
