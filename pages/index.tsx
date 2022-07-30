@@ -117,7 +117,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="relative z-10 backdrop-blur-sm bg-white/40 rounded-lg shadow-lg p-5 md:w-[82] w-70 text-gray-600 ">
+            <div className="relative z-10 backdrop-blur-sm bg-white/40 rounded-lg shadow-lg p-5 md:w-[70] text-gray-600 ">
               <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="text-sm">
@@ -146,7 +146,7 @@ const Home: NextPage = () => {
                     type="tel"
                     name="phone"
                     id="phone"
-                    className="ring-1 ring-gray-300 w-full rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
+                    className="ring-1 ring-gray-300 w-full rounded-md border-0 shadow-md px-3 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="Phone Number"
                     required
                   />
