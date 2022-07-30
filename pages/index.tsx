@@ -117,7 +117,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="relative z-10 backdrop-blur-sm bg-white/40 rounded-lg shadow-lg p-7 md:w-[82] text-gray-600 ">
+            <div className="relative z-10 backdrop-blur-sm bg-white/40 rounded-lg shadow-lg p-5 md:w-[82] w-70 text-gray-600 ">
               <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="text-sm">
