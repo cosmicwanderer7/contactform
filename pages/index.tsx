@@ -130,7 +130,7 @@ const Home: NextPage = () => {
                     type="text"
                     name="name"
                     id="name"
-                    className="ring-1 ring-gray-300 w-80 md:w-full rounded-md border-0 shadow-md px-4 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
+                    className="ring-1 ring-gray-300 lg:w-80 w-full rounded-md border-0 shadow-md px-4 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="Your Full Name"
                     required
                   />
@@ -146,7 +146,7 @@ const Home: NextPage = () => {
                     type="tel"
                     name="phone"
                     id="phone"
-                    className="ring-1 ring-gray-300 w-80 md:w-full rounded-md border-0 shadow-md px-3 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
+                    className="ring-1 ring-gray-300 lg:w-80 w-full rounded-md border-0 shadow-md px-3 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="Phone Number"
                     required
                   />
@@ -163,7 +163,7 @@ const Home: NextPage = () => {
                     type="email"
                     name="email"
                     id="email"
-                    className="ring-1 ring-gray-300 w-80 md:w-full rounded-md border-0 shadow-md px-4 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
+                    className="ring-1 ring-gray-300 lg:w-80 w-full rounded-md border-0 shadow-md px-4 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="Email Address"
                     required
                   />
@@ -178,7 +178,7 @@ const Home: NextPage = () => {
                     onChange={(e) => setCountry(e.target.value)}
                     name="message"
                     id="message"
-                    className="ring-1 ring-gray-300 w-80 md:w-full rounded-md border-0 shadow-md px-4 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
+                    className="ring-1 ring-gray-300 lg:w-80 w-full rounded-md border-0 shadow-md px-4 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="slelect"
                   >
                     <option placeholder="AF">Afghanistan</option>
@@ -488,7 +488,7 @@ const Home: NextPage = () => {
                     onChange={(e) => setMessage(e.target.value)}
                     name="message"
                     id="message"
-                    className="ring-1 ring-gray-300 w-80 md:w-full rounded-md border-0 shadow-md px-4 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
+                    className="ring-1 ring-gray-300 lg:w-80 w-full rounded-md border-0 shadow-md px-4 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="Your Feedback"
                   />
                 </div>
