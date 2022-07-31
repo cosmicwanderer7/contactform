@@ -120,7 +120,7 @@ const Home: NextPage = () => {
             <div className="relative z-10 backdrop-blur-sm bg-white/40 rounded-lg shadow-lg p-5 md:w-[70] text-gray-600 ">
               <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
                 <div>
-                  <label htmlFor="name" className="text-sm">
+                  <label htmlFor="name" className="text-md">
                     Name <text className="text-red-700">*</text>
                   </label>
 
@@ -130,13 +130,13 @@ const Home: NextPage = () => {
                     type="text"
                     name="name"
                     id="name"
-                    className="ring-1 ring-gray-300 w-80 rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
+                    className="ring-1 ring-gray-300 w-80 rounded-md border-0 shadow-md px-4 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="Your Full Name"
                     required
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="text-sm">
+                  <label htmlFor="phone" className="text-md">
                     Phone <text className="text-red-700">*</text>
                   </label>
 
@@ -146,14 +146,14 @@ const Home: NextPage = () => {
                     type="tel"
                     name="phone"
                     id="phone"
-                    className="ring-1 ring-gray-300 w-80 rounded-md border-0 shadow-md px-3 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
+                    className="ring-1 ring-gray-300 w-80 rounded-md border-0 shadow-md px-3 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="Phone Number"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="text-sm">
+                  <label htmlFor="email" className="text-md">
                     Email Address <text className="text-red-700">*</text>
                   </label>
 
@@ -163,13 +163,13 @@ const Home: NextPage = () => {
                     type="email"
                     name="email"
                     id="email"
-                    className="ring-1 ring-gray-300 w-80 rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
+                    className="ring-1 ring-gray-300 w-80 rounded-md border-0 shadow-md px-4 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="Email Address"
                     required
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="text-sm">
+                  <label htmlFor="message" className="text-md">
                     Country Of Origin
                   </label>
 
@@ -178,7 +178,7 @@ const Home: NextPage = () => {
                     onChange={(e) => setCountry(e.target.value)}
                     name="message"
                     id="message"
-                    className="ring-1 ring-gray-300 w-80 rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
+                    className="ring-1 ring-gray-300 w-80 rounded-md border-0 shadow-md px-4 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="slelect"
                   >
                     <option placeholder="AF">Afghanistan</option>
@@ -479,7 +479,7 @@ const Home: NextPage = () => {
                   </select>
                 </div>
                 <div>
-                  <label htmlFor="message" className="text-sm">
+                  <label htmlFor="message" className="text-md">
                     Your Feedback
                   </label>
 
@@ -488,13 +488,13 @@ const Home: NextPage = () => {
                     onChange={(e) => setMessage(e.target.value)}
                     name="message"
                     id="message"
-                    className="ring-1 ring-gray-300 w-80 rounded-md border-0 shadow-md px-4 py-2 focus:ring-teal-300 focus:ring-2 outline-none mt-2"
+                    className="ring-1 ring-gray-300 w-80 rounded-md border-0 shadow-md px-4 py-[1.5] focus:ring-teal-300 focus:ring-2 outline-none mt-2"
                     placeholder="Your Feedback"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="inline-block self-end bg-[#f7768ef5] text-white font-bold rounded-lg py-2 px-6"
+                  className="inline-block self-end bg-[#f7768ef5] text-white font-bold rounded-lg py-[1.5] px-6"
                 >
                   Submit
                 </button>
