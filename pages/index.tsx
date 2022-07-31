@@ -484,7 +484,7 @@ const Home: NextPage = () => {
                   </label>
 
                   <textarea
-                    value={message}ges
+                    value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     name="message"
                     id="message"
