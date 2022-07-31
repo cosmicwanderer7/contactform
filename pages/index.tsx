@@ -494,7 +494,7 @@ const Home: NextPage = () => {
                 </div>
                 <button
                   type="submit"
-                  className="inline-block self-end bg-[#f7768ef5] text-white font-bold rounded-lg py-[1.5] px-6"
+                  className="inline-block self-end bg-[#f7768ef5] text-white font-bold rounded-lg py-2 px-6"
                 >
                   Submit
                 </button>
